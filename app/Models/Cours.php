@@ -2,8 +2,12 @@
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Cours extends Model
 {
+ use HasFactory; // <-- ajouter cette ligne
+ // ... reste du code
+
  protected $fillable = [
  'libelle', 'professeur', 'volume_horaire',
  ];
