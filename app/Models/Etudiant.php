@@ -5,8 +5,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Etudiant extends Model
 {
-use HasFactory; // <-- ajouter cette ligne
-// ... reste du code
+use HasFactory; 
+
  protected $fillable = [
  'prenom', 'nom', 'email', 'date_naissance',
  ];
